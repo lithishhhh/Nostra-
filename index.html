@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra — Premium Streetwear</title>
+    <link rel="stylesheet" href="style.css">
+     <!--Font Awesome CDN Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Nos<span>tra</span></span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li><a href="#most-wanted">Most Wanted</a></li>
+                <li><a href="collectionpage.html">Collections</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button title="Search" onclick="toggleNavSearch()">🔍</button>
+                <button title="Wishlist">♡</button>
+                <button title="Cart" class="cart-btn">🛍️ <span class="cart-count" id="cartCount">0</span></button>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+       <p id="closeBtn">X</p>
+
+            <a href="index.html">Home</a>
+            <a href="#new-arrivals">New Arrivals</a>
+            <a href="#most-wanted">Most Wanted</a>
+            <a href="#about-us">About Us</a>
+            <a href="collectionpage.html">Collections</a>
+            <a href="contactpage.html">Contact</a>
+            
+        </div>
+       
+    </nav>
+    <!-- Nav Search Overlay -->
+    <div class="nav-search-overlay" id="searchOverlay">
+        <div class="nav-search-inner">
+            <input type="text" id="home-search"  placeholder="Search products, brands…"
+                oninput="navSearchSuggest(this.value)">
+        </div>
+        <div class="nav-search-results" id="SearchResults"></div>
+    </div>
+    <!--Announcement-->
+
+    <div class="announcement-bar">
+
+<div class="announcement-track">
+
+<span>
+SIGN UP & GET 20% OFF • FREE SHIPPING ABOVE ₹1999 • PREMIUM STREETWEAR COLLECTION • 
+</span>
+
+<span>
+SIGN UP & GET 20% OFF • FREE SHIPPING ABOVE ₹1999 • PREMIUM STREETWEAR COLLECTION • 
+</span>
+
+</div>
+
+</div>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="slides">
+
+            <div class="slide-active">
+
+                <img src="nostra hero image.jpg">
+
+                <div class="hero-content">
+
+                    <h1>Level Up !</h1>
+
+                    <p>
+                     Modern. Stylish. Timeless !
+                    </p>
+                    <p>Premium products at affordable price</p>
+
+                    <a href="collectionpage.html" class="hero-btn">
+                        EXPLORE COLLECTION
+                    </a>
+
+                </div>
+
+            </div>
+
+
+           </div>
+           </section>
+
+    <!-- Brands Marquee -->
+    <section class="brands-section">
+
+        <h2 class="brand-title">Our Brands</h2>
+
+        <div class="brand-slider">
+
+            <div class="brand-track">
+
+                <span>NIKE</span>
+                <span>ADIDAS</span>
+                <span>PUMA</span>
+                <span>LEVI'S</span>
+                <span>ZARA</span>
+                <span>H&M</span>
+                <span>GUCCI</span>
+                <span>CALVIN KLEIN</span>
+
+                <!-- Duplicate -->
+                <span>NIKE</span>
+                <span>ADIDAS</span>
+                <span>PUMA</span>
+                <span>LEVI'S</span>
+                <span>ZARA</span>
+                <span>H&M</span>
+                <span>GUCCI</span>
+                <span>CALVIN KLEIN</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+
+        <h2>Why Shop </h2><span>With Us</span>
+
+        <div class="feature-container">
+
+            <div class="feature-box">
+
+                <div class="feature-icon">
+                    ⭐
+                </div>
+
+                <h3>Premium Quality</h3>
+
+                <p>
+                    We offer only premium quality clothing with trusted brands.
+                </p>
+
+            </div>
+
+
+            <div class="feature-box">
+
+                <div class="feature-icon">
+                    🚚
+                </div>
+
+                <h3>Fast Delivery</h3>
+
+                <p>
+                    Fast and secure delivery across India.
+                </p>
+
+            </div>
+
+
+            <div class="feature-box">
+
+                <div class="feature-icon">
+                    💳
+                </div>
+
+                <h3>Secure Payment</h3>
+
+                <p>
+                    100% secure online payment with trusted gateways.
+                </p>
+
+            </div>
+
+
+            <div class="feature-box">
+
+                <div class="feature-icon">
+                    🎧
+                </div>
+
+                <h3>24/7 Support</h3>
+
+                <p>
+                    Our support team is always ready to help you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- New Arrivals -->
+    <section class="products-section" id="new-arrivals">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <p class="section-label">Fresh In</p>
+                    <h2 class="section-title">New<span class="arrivals-span">Arrivals</span> </h2>
+                </div>
+                <a href="collectionpage.html" class="view-all">View All →</a>
+            </div>
+            <div class="products-grid">
+
+                <div class="product-card" data-name="Oversized Street T-shirt">
+                    <div class="product-img">
+                        <img src="arrival-image1.jpg"
+                            alt="Oversized Street Tee" />
+                        <span class="product-badge badge-new">New</span>
+                        <button class="product-wish">♡</button>
+                        <button class="quick-add">Quick Add</button>
+                    </div>
+                    <div class="product-info">
+
+                        <h3 class="product-name">Oversized Street T-shirt</h3>
+
+                        <div class="rating">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+
+                            <span>4.8</span>
+
+                        </div>
+
+                        <p class="price">
+
+                            ₹699
+
+                            <del>₹1199</del>
+
+                        </p>
+
+                        <div class="product-buttons">
+
+                            <button class="cart-btn">
+
+                                <i class="fa-solid fa-cart-shopping"></i>
+
+                                Add to Cart
+
+                            </button>
+
+                            <button class="buy-btn">
+
+                                Buy Now
+
+                            </button>
+
+                        </div>
+
+                    </div>
+                    </div>
+                    
+
+                    <div class="product-card" data-name="Printed T-shirt">
+                        <div class="product-img">
+                            <img src="arrival-image2.jpg"
+                                alt="Cargo Joggers" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+
+                            <h3 class="product-name">Printed T-shirt</h3>
+
+                            <div class="rating">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <i class="fa-solid fa-star-half-stroke"></i>
+
+                                <span>3.6</span>
+
+                            </div>
+
+                            <p class="price">
+
+                                ₹699
+
+                                <del>₹1199</del>
+
+                            </p>
+
+                            <div class="product-buttons">
+
+                                <button class="cart-btn">
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    Add to Cart
+
+                                </button>
+
+                                <button class="buy-btn">
+
+                                    Buy Now
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-card" data-name="Printed Hoodie">
+                        <div class="product-img">
+                            <img src="arrival-image3.jpg">
+                                alt="Graphic Hoodie" />
+                            <span class="product-badge badge-sale">Sale</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+
+                            <h3 class="product-name">Printed Hoodie</h3>
+
+                            <div class="rating">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+
+                                <span>4.8</span>
+
+                            </div>
+
+                            <p class="price">
+
+                                ₹1599
+
+                                <del>₹1999</del>
+
+                            </p>
+
+                            <div class="product-buttons">
+
+                                <button class="cart-btn">
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    Add to Cart
+
+                                </button>
+
+                                <button class="buy-btn">
+
+                                    Buy Now
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="product-card" data-name="Oversized Baggy">
+                        <div class="product-img">
+                            <img src="arrival-image4.jpg"
+                                alt="Slim Fit Chinos" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+
+                            <h3 class="product-name">Oversized Baggy</h3>
+
+                            <div class="rating">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+
+                                <span>4.9</span>
+
+                            </div>
+
+                            <p class="price">
+
+                                ₹1999
+
+                                <del>₹2699</del>
+
+                            </p>
+
+                            <div class="product-buttons">
+
+                                <button class="cart-btn">
+
+                                    <i class="fa-solid fa-cart-shopping"></i>
+
+                                    Add to Cart
+
+                                </button>
+
+                                <button class="buy-btn">
+
+                                    Buy Now
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+    </section>
+
+    <!-- Offer Banner -->
+    <section class="offer">
+
+        <div class="offer-content">
+
+            <div class="offer-text">
+
+                <span class="offer-badge">
+
+                    🔥 Limited Offer
+
+                </span>
+
+                <h2>
+
+                    Summer Collection
+
+                </h2>
+
+                <h1>
+
+                    Flat <span>40% OFF</span>
+
+                </h1>
+
+                <p>
+
+                    Discover premium outfits crafted for comfort,
+                    confidence and everyday style.
+
+                </p>
+
+                <div class="offer-buttons">
+
+                    <a href="collectionpage.html" class="shop-btn">
+
+                        Shop Now
+
+                    </a>
+
+                    <a href="collectionpage.html" class="explore-btn">
+
+                        Explore
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="offer-image">
+
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=900&q=80">
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="marketing-sec">
+    <section class="about" id="about-us">
+
+        <div class="about-image">
+
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=900&q=80">
+
+            
+        </div>
+
+        <div class="about-content">
+
+            <p class="small-title">
+
+                OUR STORY
+
+            </p>
+
+            <h2>
+
+                Crafted For Every Dreamer
+
+            </h2>
+
+            <p>
+
+                At <strong>Nostra</strong>, we believe fashion is more than what you wear—it's how you introduce
+                yourself before saying a word. Every collection is carefully curated to blend timeless elegance with
+                modern street style, empowering you to express confidence in every step.
+
+            </p>
+
+            <p>
+
+                From everyday essentials to statement pieces, our mission is simple: deliver premium quality,
+                exceptional comfort, and designs that inspire individuality. We don't just follow trends—we create
+                experiences you'll love wearing.
+
+            </p>
+            
+
+            <a href="collectionpage.html" class="about-btn">
+
+                Explore More
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="achievement">
+
+        <div class="achievement-box">
+
+            <h2>10K+</h2>
+
+            <p>Happy Customers</p>
+
+        </div>
+
+        <div class="achievement-box">
+
+            <h2>500+</h2>
+
+            <p>Premium Products</p>
+
+        </div>
+
+        <div class="achievement-box">
+
+            <h2>98%</h2>
+
+            <p>Customer Satisfaction</p>
+
+        </div>
+
+        <div class="achievement-box">
+
+            <h2>4.9★</h2>
+
+            <p>Average Rating</p>
+
+        </div>
+
+    </section>
+    </div>
+    </section>
+
+    <!-- Most Wanted -->
+      <section class="collection-section" id="most-wanted" >
+
+     <h2>Most <span>Wanted</span></h2>
+                  
+
+        
+
+        <div class="collections-grid">
+
+                    <div class="product-card" data-category="jacket">
+
+                        <div class="product-img">
+
+                            <img src="product-image4.jpg"
+                                alt="Varsity Jacket">
+
+                            <span class="product-badge badge-best">BEST</span>
+
+                            <button class="product-wish">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button class="quick-add">
+                                Add To Cart
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p class="product-name">Varsity Jacket</p>
+
+                            <div class="product-price">
+                                <span class="price-current">₹4,299</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="product-card" data-category="shoes">
+
+                        <div class="product-img">
+
+                            <img src="product-image5.jpg"
+                                alt="Air Sneakers">
+
+                            <span class="product-badge badge-limited">LIMITED</span>
+
+                            <button class="product-wish">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button class="quick-add">
+                                Add To Cart
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p class="product-name">Air Sneakers</p>
+
+                            <div class="product-price">
+                                <span class="price-current">₹5,499</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-card" data-category="shirt">
+
+                        <div class="product-img">
+
+                            <img src="product-image6.jpg"
+                                alt="Street Shirt">
+
+                            <span class="product-badge badge-new">NEW</span>
+
+                            <button class="product-wish">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button class="quick-add">
+                                Add To Cart
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p class="product-name">Street Shirt</p>
+
+                            <div class="product-price">
+                                <span class="price-current">₹1,899</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="product-card" data-category="jeans">
+
+                        <div class="product-img">
+
+                            <img src="product-image7.jpg"
+                                alt="Slim Fit Jeans">
+
+                            <span class="product-badge badge-best">BEST</span>
+
+                            <button class="product-wish">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button class="quick-add">
+                                Add To Cart
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <p class="product-name">Slim Fit Jeans</p>
+
+                            <div class="product-price">
+                                <span class="price-current">₹2,299</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="product-card" data-category="women">
+
+    <div class="product-img">
+
+        <img src="product-image8.jpg" alt="Women's Crop Hoodie">
+
+        <span class="product-badge badge-limited">LIMITED</span>
+
+        <button class="product-wish">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <button class="quick-add">
+            Add To Cart
+        </button>
+
+    </div>
+
+    <div class="product-info">
+
+        <p class="product-name">Women's Crop Hoodie</p>
+
+        <div class="product-price">
+            <span class="price-current">₹2,699</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="product-card" data-category="women">
+
+    <div class="product-img">
+
+        <img src="product-image9jpg.jpg" alt="Women's Street Jacket">
+
+        <span class="product-badge badge-new">NEW</span>
+
+        <button class="product-wish">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <button class="quick-add">
+            Add To Cart
+        </button>
+
+    </div>
+
+    <div class="product-info">
+
+        <p class="product-name">Women's Street Jacket</p>
+
+        <div class="product-price">
+            <span class="price-current">₹3,799</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="product-card" data-category="shoes">
+
+    <div class="product-img">
+
+        <img src="product-image19.jpg" alt="High Top Sneakers">
+
+        <span class="product-badge badge-best">BEST</span>
+
+        <button class="product-wish">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <button class="quick-add">
+            Add To Cart
+        </button>
+
+    </div>
+
+    <div class="product-info">
+
+        <p class="product-name">High Top Sneakers</p>
+
+        <div class="product-price">
+            <span class="price-current">₹4,999</span>
+        </div>
+
+    </div>
+
+</div>
+<div class="product-card" data-category="hoodie">
+
+    <div class="product-img">
+
+        <img src="product-image20.jpg" alt="Premium Sweatshirt">
+
+        <span class="product-badge badge-limited">LIMITED</span>
+
+        <button class="product-wish">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <button class="quick-add">
+            Add To Cart
+        </button>
+
+    </div>
+
+    <div class="product-info">
+
+        <p class="product-name">Premium Sweatshirt</p>
+
+        <div class="product-price">
+            <span class="price-current">₹2,899</span>
+        </div>
+
+    </div>
+
+</div>
+</div>
+                    </section>
+                    
+                    
+
+
+
+                       
+  
+    <!--Offer-New Customer-->
+
+    <section class="new-customer">
+
+        <div class="offer-left">
+
+            <p class="offer-tag">
+
+                🎁 Exclusive Offer
+
+            </p>
+
+            <h2>
+
+                20% OFF
+
+            </h2>
+
+            <h3>
+
+                For New Customers
+
+            </h3>
+
+            <p>
+
+                Join Nostra today and enjoy premium fashion
+                at an exclusive discount.
+
+            </p>
+
+            <div class="coupon">
+
+                WELCOME20
+
+            </div>
+
+            <a href="collectionpage.html" class="offer-btn">
+
+                Shop Now
+
+            </a>
+
+        </div>
+
+        <div class="offer-right">
+
+            <img src="hand-shake.jpg">
+
+        </div>
+
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>Nostra</h2>
+
+                <p>
+
+                    Premium fashion that blends comfort,
+                    style and confidence.
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Chennai, India
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +91 98765 43210
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    support@nostra.com
+
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">Collections</a></li>
+
+                    <li><a href="#">New Arrivals</a></li>
+
+                    <li><a href="#">Most Wanted</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Follow Us
+
+                </h3>
+
+                <div class="social-icons">
+
+                    <a href="#">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+
+            © 2025 Nostra | Designed by <b>Lithish</b>
+
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
