@@ -248,7 +248,7 @@ height:320px;
 @media(max-width:576px){
 
 .collections-grid{
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
 }
 
 }
@@ -336,7 +336,7 @@ height:320px;
 }
 @media (max-width:768px) {
     .search-box{
-        width:50%;
+        width:70%;
     }
 }
 .category-section{
