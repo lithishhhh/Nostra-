@@ -109,17 +109,16 @@ margin-top: 30PX;
 @media(max-width:768px){
 
 .collections-grid{
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
 }
 
 .products-grid{
 
-grid-template-columns:1fr;
+grid-template-columns:2fr;
 
 }
 
 .sidebar{
-
 margin-bottom:40px;
 
 }
